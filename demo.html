@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>网格折叠动画—jQuery插件</title>
+  <link rel="stylesheet" href="css/common.css"/>
+  <link rel="stylesheet" href="css/jquery-flod-grid.css"/>
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?760cb73b0a55b008cbf69206cd7503cd";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+  <style>
+    body{background-color:#333;}
+    .preloader .square_box .square h2{font-size:35px;margin-top:8%;}
+  </style>
+</head>
+<body>
+  <!-- loading方块 -->
+  <div class="loading_btns">
+    <div class="btn_logo"></div>
+  </div>
+  <!-- loading遮罩层 -->
+  <div class="loading_zzc"></div>
+  <!-- 网格 -->
+  <div class="preloader">
+    <div class="square_box"></div>
+  </div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/jquery-flodGrid-demo.js"></script>
+<script>
+$(function(){
+  $('body').FlodGrid();
+})
+</script>
+</body>
+</html>

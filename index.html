@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>网格折叠动画—jQuery插件</title>
+  <link rel="stylesheet" href="css/common.css"/>
+  <link rel="stylesheet" href="css/jquery-flod-grid.css"/>
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?760cb73b0a55b008cbf69206cd7503cd";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+  <style>
+    body{background-color:#333;color: #eee;}
+  </style>
+</head>
+<body>
+  <h1>  
+    网格折叠动画插件（jQuery插件）为全屏动画效果，默认初始化页面时执行折叠动画，可以通过按钮控制展开、折叠<br><br>
+    作者：弦云孤赫(David Yang)&nbsp;&nbsp;&nbsp;&nbsp;联系方式—QQ：314786482<br><br>
+    温馨提示：作者开源不易，希望使用本插件时，能署名作者，感谢支持。<br><br>
+    ps：由于本插件使用了大量CSS3属性，对于低版本浏览器（如ie9以下版本等不支持CSS3属性的浏览器）不兼容。
+  </h1>
+  <div class="code">
+    <pre>
+调用轮播插件：
+Javascript：
+$('body').FlodGrid({
+  shadeTime: 500, //遮罩层遮挡网格时长
+  flodTime: 1000, //初始化页面执行网格折叠动画的延迟时长
+  showBtnTime: 4500 //折叠动画开始至显示按钮的延迟时长
+});
+Html：
+&lt;div class="loading_btns"&gt;
+  &lt;div class="btn_logo"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="loading_zzc"&gt;&lt;/div&gt;
+&lt;div class="preloader"&gt;
+  &lt;div class="square_box"&gt;&lt;/div&gt;
+&lt;/div&gt;  
+    </pre>
+  </div>
+  <!-- loading方块 -->
+  <div class="loading_btns">
+    <div class="btn_logo"></div>
+  </div>
+  <!-- loading遮罩层 -->
+  <div class="loading_zzc"></div>
+  <!-- 网格 -->
+  <div class="preloader">
+    <div class="square_box"></div>
+  </div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/jquery-flodGrid.js"></script>
+<script>
+$(function(){
+  $('body').FlodGrid({
+    shadeTime: 1000, //遮罩层遮挡网格时长
+    flodTime: 1000, //初始化页面执行网格折叠动画的延迟时长
+    showBtnTime: 4500 //折叠动画开始至显示按钮的延迟时长
+  });
+})
+</script>
+</body>
+</html>
