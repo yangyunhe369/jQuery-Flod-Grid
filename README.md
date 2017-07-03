@@ -5,7 +5,7 @@
 
 ps:由于本插件使用了大量CSS3属性，对于低版本浏览器（如ie9以下版本等不支持CSS3属性的浏览器）不兼容。
 
-**demo**：[线上地址](https://yangyunhe369.github.io/jQuery-Apple-Slider/)
+**demo**：[线上地址](https://yangyunhe369.github.io/jQuery-Flod-Grid/)
 
 ``` javascript
 调用轮播插件：
